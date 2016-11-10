@@ -1,8 +1,12 @@
 function data () {
-var x,y,a;
-x = document.getElementById("form1");
-y = x.elements["name"].value;
-alert(y); 
-a = x.elements["rollnum"].value;
-alert (a);
+var formdata,name,rollnum,a;
+formdata = document.getElementById("form1");
+
+name = formdata.elements["name"].value;
+ 
+rollnum = formdata.elements["rollnum"].value;
+
+var namearr = [];
+namearr.push(name);
+
 }
