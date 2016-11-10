@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+}
+
+html, body{
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+}
+
+#head{
+	text-align: center;
+}
+
+.c1{
+	width:  35%;
+	float: left;
+	padding-left: 30px;
+	border-right: 1px solid;
+}
+
+.c2{
+	max-width: 40%;
+	float: right;
+	min-width: 20%;
+	margin-right: 18em;
+}
+.c2 h2{
+	border-bottom: 2px solid;
+}
+
+.form_contents{
+		padding-top: 20px; 
+		/*margin-left: 7em;*/
+		text-align: center;
+}
+
+button{
+	width: 15em;
+	height: 4em;
+	border-radius: 10px;
+}
