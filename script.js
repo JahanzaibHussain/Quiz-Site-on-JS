@@ -1,12 +1,12 @@
-function data () {
-
 var formdata,name,rollnum;
+var namearr = [''];
 
+function data () {
 formdata = document.getElementById("form1");
 name = formdata.elements["name"].value;
 rollnum = formdata.elements["rollnum"].value;
 
-if(name.value == "" || rollnum.value == ""){
+if(name == "" || rollnum == ""){
     	alert("field cannot be blank");
     }
     else{
@@ -16,13 +16,17 @@ if(name.value == "" || rollnum.value == ""){
 }
 
 
-/*function login(){
+function login(){
+
+	formdata = document.getElementById("form1");
+	var name = formdata.elements["name"].value;
+	var rollnum = formdata.elements["rollnum"].value;
 
 	for(var i = 0; i < namearr.length ; i++){
-		if (rollnum.value == localStorage.getItem(name.value)) {
-			alert("Success fonud");
+		if (rollnum == localStorage.getItem(name)) {
+			window.location = "main.html?name=" + name;
 		}else {
 			alert("Sign up First!");
 		}
 	}
-}*/
+}
